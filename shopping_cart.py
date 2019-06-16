@@ -82,7 +82,24 @@ print("---------------------------------")
 
 print("SUBTOTAL: " + str(total_price)) #TODO format in USD
 
+tax_rate = .08875 #NY tax rate 8.875%
+tax = str(total_price) * str(tax_rate)
+    
 
+print("TAX :" + (str(total_price)*0.85))
+
+
+print("the price is ${0:.2f}".format(6.5))
+
+# my_price = str(total_price)
+
+# def to_usd(my_price):
+#     """
+#     Converts a numeric value to usd-formatted string, for printing and display purposes. \n
+#     Example: to_usd(4000.444444) \n
+#     Returns: $4,000.44
+#     """
+#     return f"${my_price:,.2f}"
 
 
 # A grocery store name of your choice
