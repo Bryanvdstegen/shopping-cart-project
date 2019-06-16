@@ -67,8 +67,8 @@ print("WWW.GREEN-FOODS-GROCERY.COM")
 print("---------------------------------")
 
 import datetime
-today = datetime.date.today()
-print("CHECKOUT AT: " + " " + str(today)) #> '2017-07-02'
+now = datetime.datetime.now()
+print("CHECKOUT AT:" + " " + str(now)) #> '2017-07-02'
 
 print("---------------------------------")
 
@@ -78,8 +78,9 @@ for selected_id in selected_ids:
     total_price = total_price + matching_product["price"]
     print("... " + matching_product["name"] + " " + str(matching_product["price"]))
 
+print("---------------------------------")
 
-print("TOTAL PRICE: " + str(total_price)) #TODO format in USD
+print("SUBTOTAL: " + str(total_price)) #TODO format in USD
 
 
 
