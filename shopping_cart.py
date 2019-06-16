@@ -66,9 +66,14 @@ print("BRYAN'S WHOLEFOODS GROCERY")
 print("WWW.BRYANS-WHOLEFOODS-GROCERY.COM")
 print("---------------------------------")
 
-import datetime
-now = datetime.datetime.now()
-print("CHECKOUT AT:" + " " + str(now)) #> '2017-07-02'
+from datetime import datetime
+# now = datetime.now()
+# time = now.strftime("%H:%M:%S")
+
+now = datetime.now()
+date_time = now.strftime("%m/%d/%Y, %I:%M %p")
+
+print("CHECKOUT AT:" + " " + str(date_time)) #> '2017-07-02'
 
 print("---------------------------------")
 
