@@ -38,6 +38,7 @@ products = [
 # loop function
 
 total_price = 0
+selected_ids = []
 
 while True:
     selected_id = input("Please input a product identifier: ") #> "9" (string data type)
@@ -47,11 +48,12 @@ while True:
     else:
         #print(selected_id) #prints the number that was input
         #print(type(selected_id)) #tells us the data type/format
-        matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
-        matching_product = matching_products[0] #
-        total_price = total_price + matching_product["price"]
-        print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
-
+        # matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
+        # matching_product = matching_products[0] #
+        # total_price = total_price + matching_product["price"]
+        #print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"])) #Don't want to print select product immediately after each time
+        selected_ids.append(selected_id)
+#print(selected_ids)
 #print(matching_product)
 #print(type(matching_product)) #tells us what the matching_product type is (list data type - note that str and list are different)
 
@@ -59,7 +61,13 @@ while True:
 # INFO DISPLAY / OUTPUT
 #
 
-print("TOTAL PRICE: " + str(total_price))
+for selected_id in selected_ids:
+    matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
+    matching_product = matching_products[0] #
+    total_price = total_price + matching_product["price"]
+    print("SELECTED PRODUCT: " + matching_product["name"] + " " + str(matching_product["price"]))
+
+print("TOTAL PRICE: " + str(total_price)) #TODO format in USD
 
 
 
