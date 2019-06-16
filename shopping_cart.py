@@ -62,8 +62,8 @@ while True:
 #
 
 print("---------------------------------")
-print("GREEN FOODS GROCERY")
-print("WWW.GREEN-FOODS-GROCERY.COM")
+print("BRYAN'S WHOLEFOODS GROCERY")
+print("WWW.BRYANS-WHOLEFOODS-GROCERY.COM")
 print("---------------------------------")
 
 import datetime
@@ -80,15 +80,16 @@ for selected_id in selected_ids:
 
 print("---------------------------------")
 
-print("SUBTOTAL: " + str(total_price)) #TODO format in USD
+#print("SUBTOTAL: " + str(total_price)) #TODO format in USD
 
-# tax_rate = .08875 #NY tax rate 8.875%
-# tax = str(total_price) * str(tax_rate)
+print("SUBTOTAL: ${0:.2f}".format(total_price)) #TODO format in USD
 
-# print("TAX :" + (str(total_price)*0.85))
+tax_rate = .08875 #NY tax rate 8.875%
+tax = float(total_price) * tax_rate
 
+print("TAX: ${0:.2f}".format(tax))
 
-#print("the price is ${0:.2f}".format(6.5))
+print("TOTAL: ${0:.2f}".format(total_price + tax))
 
 print("---------------------------------")
 print("THANKS, SEE YOU AGAIN SOON!")
