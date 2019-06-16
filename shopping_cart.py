@@ -82,14 +82,17 @@ print("---------------------------------")
 
 print("SUBTOTAL: " + str(total_price)) #TODO format in USD
 
-tax_rate = .08875 #NY tax rate 8.875%
-tax = str(total_price) * str(tax_rate)
-    
+# tax_rate = .08875 #NY tax rate 8.875%
+# tax = str(total_price) * str(tax_rate)
 
-print("TAX :" + (str(total_price)*0.85))
+# print("TAX :" + (str(total_price)*0.85))
 
 
-print("the price is ${0:.2f}".format(6.5))
+#print("the price is ${0:.2f}".format(6.5))
+
+print("---------------------------------")
+print("THANKS, SEE YOU AGAIN SOON!")
+print("---------------------------------")
 
 # my_price = str(total_price)
 
