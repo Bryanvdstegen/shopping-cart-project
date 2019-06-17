@@ -89,7 +89,7 @@ print("---------------------------------")
 
 print("SUBTOTAL: ${0:.2f}".format(total_price)) #TODO format in USD
 
-tax_rate = .08875 #NY tax rate 8.875%
+tax_rate = .0875 #NY tax rate 8.75%
 tax = float(total_price) * tax_rate
 
 print("TAX: ${0:.2f}".format(tax))
@@ -97,7 +97,7 @@ print("TAX: ${0:.2f}".format(tax))
 print("TOTAL: ${0:.2f}".format(total_price + tax))
 
 print("---------------------------------")
-print("THANKS, SEE YOU AGAIN SOON!")
+print("THANK YOU FOR SHOPPING AT BRYAN'S WHOLEFOODS")
 print("---------------------------------")
 
 # my_price = str(total_price)
